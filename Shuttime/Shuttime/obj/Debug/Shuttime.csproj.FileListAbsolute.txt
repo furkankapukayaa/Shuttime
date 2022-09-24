@@ -9,3 +9,14 @@ C:\Users\Furkan\source\repos\Shuttime\Shuttime\obj\Debug\Shuttime.csproj.CoreCom
 C:\Users\Furkan\source\repos\Shuttime\Shuttime\obj\Debug\Shuttime.exe
 C:\Users\Furkan\source\repos\Shuttime\Shuttime\obj\Debug\Shuttime.pdb
 C:\Users\Furkan\source\repos\Shuttime\Shuttime\obj\Debug\Shuttime.setCustom.resources
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\Shuttime\Shuttime\Shuttime\bin\Debug\Shuttime.exe.config
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\Shuttime\Shuttime\Shuttime\bin\Debug\Shuttime.exe
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\Shuttime\Shuttime\Shuttime\bin\Debug\Shuttime.pdb
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\Shuttime\Shuttime\Shuttime\obj\Debug\Shuttime.csproj.AssemblyReference.cache
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\Shuttime\Shuttime\Shuttime\obj\Debug\Shuttime.Form1.resources
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\Shuttime\Shuttime\Shuttime\obj\Debug\Shuttime.Properties.Resources.resources
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\Shuttime\Shuttime\Shuttime\obj\Debug\Shuttime.setCustom.resources
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\Shuttime\Shuttime\Shuttime\obj\Debug\Shuttime.csproj.GenerateResource.cache
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\Shuttime\Shuttime\Shuttime\obj\Debug\Shuttime.csproj.CoreCompileInputs.cache
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\Shuttime\Shuttime\Shuttime\obj\Debug\Shuttime.exe
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\Shuttime\Shuttime\Shuttime\obj\Debug\Shuttime.pdb

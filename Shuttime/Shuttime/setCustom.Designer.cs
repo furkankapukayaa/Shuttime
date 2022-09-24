@@ -32,9 +32,9 @@ namespace Shuttime
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(setCustom));
             this.timerStart = new System.Windows.Forms.Button();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.title = new System.Windows.Forms.Label();
             this.subtitle = new System.Windows.Forms.Label();
-            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +60,12 @@ namespace Shuttime
             this.timerStart.UseVisualStyleBackColor = false;
             this.timerStart.Click += new System.EventHandler(this.timerStart_Click);
             // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "start.png");
+            // 
             // title
             // 
             this.title.AutoSize = true;
@@ -79,12 +85,6 @@ namespace Shuttime
             this.subtitle.Size = new System.Drawing.Size(254, 15);
             this.subtitle.TabIndex = 2;
             this.subtitle.Text = "After a few minutes the computer shuts down";
-            // 
-            // ımageList1
-            // 
-            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
-            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.ımageList1.Images.SetKeyName(0, "start.png");
             // 
             // numericUpDown1
             // 
@@ -107,7 +107,7 @@ namespace Shuttime
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "setCustom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "set custom";
+            this.Text = "Set Custom";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

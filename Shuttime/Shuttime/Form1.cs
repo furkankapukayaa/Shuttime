@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Shuttime
@@ -27,16 +20,29 @@ namespace Shuttime
         {
             time.Text = DateTime.Now.ToLongTimeString();
         }
-        // shutdown -s -f -t 9999
         private void minute15_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process process = new System.Diagnostics.Process();
-            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
-            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-            startInfo.FileName = "cmd.exe";
-            startInfo.Arguments = "/C shutdown -s -f -t 900";
-            process.StartInfo = startInfo;
-            process.Start();
+            SetTime("/C shutdown -s -f -t 900");
+        }
+
+        private void minute30_Click(object sender, EventArgs e)
+        {
+            SetTime("/C shutdown -s -f -t 1800");
+        }
+
+        private void minute45_Click(object sender, EventArgs e)
+        {
+            SetTime("/C shutdown -s -f -t 2700");
+        }
+
+        private void hours1_Click(object sender, EventArgs e)
+        {
+            SetTime("/C shutdown -s -f -t 3600");
+        }
+
+        private void turnOffActiveTimer_Click(object sender, EventArgs e)
+        {
+            SetTime("/C shutdown -a");
         }
 
         private void setCustom_Click(object sender, EventArgs e)
@@ -45,46 +51,13 @@ namespace Shuttime
             setCustom.Show();
         }
 
-        private void minute30_Click(object sender, EventArgs e)
+        private void SetTime(string arguments)
         {
-            System.Diagnostics.Process process = new System.Diagnostics.Process();
-            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
-            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            Process process = new Process();
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
             startInfo.FileName = "cmd.exe";
-            startInfo.Arguments = "/C shutdown -s -f -t 1800";
-            process.StartInfo = startInfo;
-            process.Start();
-        }
-
-        private void minute45_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process process = new System.Diagnostics.Process();
-            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
-            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-            startInfo.FileName = "cmd.exe";
-            startInfo.Arguments = "/C shutdown -s -f -t 2700";
-            process.StartInfo = startInfo;
-            process.Start();
-        }
-
-        private void hours1_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process process = new System.Diagnostics.Process();
-            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
-            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-            startInfo.FileName = "cmd.exe";
-            startInfo.Arguments = "/C shutdown -s -f -t 3600";
-            process.StartInfo = startInfo;
-            process.Start();
-        }
-
-        private void turnOffActiveTimer_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process process = new System.Diagnostics.Process();
-            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
-            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-            startInfo.FileName = "cmd.exe";
-            startInfo.Arguments = "/C shutdown -a";
+            startInfo.Arguments = arguments;
             process.StartInfo = startInfo;
             process.Start();
         }
